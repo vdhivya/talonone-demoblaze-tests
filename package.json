@@ -1,0 +1,9 @@
+{
+  "name": "talonone-demoblaze-tests",
+  "version": "0.1.0",
+  "description": "End-to-end tests for Demoblaze",
+  "author": "Dhivya Venugopal",
+  "devDependencies": {
+    "cypress": "^15.5.0"
+  }
+}
