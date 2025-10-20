@@ -4,7 +4,10 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://www.demoblaze.com",
     defaultBrowser: "chrome",
-    video: true,    
+    video: true,
+    env: {
+      apiBaseUrl: "https://api.demoblaze.com"
+    },
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
