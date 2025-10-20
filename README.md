@@ -26,4 +26,4 @@ npx cypress open
 
 ## Credentials
 
-The credentials for test user are managed under fixtures/. The tests use the user account before exercising the login flow.
+All credentials are managed under fixtures. 
