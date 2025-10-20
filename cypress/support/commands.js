@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', (username, password) => {
+  cy.get('#login2').click();
+  cy.get('#logInModal').should('be.visible');
+  cy.wait(1000); //fix for the flaky test.
+  cy.get('#loginusername').clear().type(username);
+  cy.get('#loginpassword').clear().type(password, { log: false });
+  cy.contains('#logInModal .modal-footer button', 'Log in').click();
+  cy.get('#nameofuser', { timeout: 10000 }).should('contain', username);
+});

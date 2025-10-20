@@ -4,7 +4,7 @@ This repository contains Cypress end-to-end tests that cover the login and purch
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) 18 or later 
+- [Node.js](https://nodejs.org/) 22 (LTS), 24 (current) or later.
 
 ## Installing Dependencies
 
@@ -15,11 +15,15 @@ npm install
 ## Running the Tests Locally
 
 ```bash
-npm run cypress:run
+npx cypress run
 ```
 
 ## Running the Tests with interactive runner
 
 ```bash
-npm run cypress:open
+npx cypress open
 ```
+
+## Credentials
+
+The credentials for test user are managed under fixtures/. The tests use the user account before exercising the login flow.
