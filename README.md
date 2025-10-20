@@ -24,6 +24,21 @@ npx cypress run
 npx cypress open
 ```
 
-## Credentials
+## Approach to test
 
-All credentials are managed under fixtures. 
+- The focus was on automating the **login and  purchase flows** on Demoblaze using Cypress.  
+- Tests validate key functionalities like login, logout, cart operations and checkout flow to ensure smooth end-to-end behavior.  
+- Test data such as user credentials and card details are handled through fixtures for consistency and reusability.  
+- API intercepts are used to verify backend responses and improve reliability.  
+- Selectors were chosen for **stability and clarity**, avoiding fragile or dynamic locators.
+
+## Use of AI Tools & Assistance
+
+- Limited AI assitance was used to **speed up documentation** and **verify element selectors**.  
+- All test design, structure, and assertions were written manually based on the application’s behavior.
+
+## Enhancements & Future Improvements
+
+- Add negative test cases (e.g., invalid login, empty cart).  
+- Include more product categories for wider coverage.  
+- Integrate with CI/CD for automated execution.
