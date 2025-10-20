@@ -2,7 +2,6 @@ import user_data from '../fixtures/user_data.json';
 import card_details from '../fixtures/card_details.json';
 
 describe('Demoblaze purchase flows', () => {
-
   before(() => {
     cy.visit('/');
   });
